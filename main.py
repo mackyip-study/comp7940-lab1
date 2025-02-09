@@ -37,5 +37,25 @@ def print_factor(x):
 
     print("========== End ==========")
 
+    return factors
+
+#Lab1 - Python Exercise Ex 3
+# Write a program that be able to find all factors of the numbers in the list l
+def find_factor_in_array():
+    print("========== Start ==========")
+
+    l = [52633, 8137, 1024, 999]
+
+    factor_dictionary = {}
+
+    for number in l:
+        factor_dictionary.update(
+            {number: print_factor(number)}
+        )
+
+    print(factor_dictionary)
+
+    print("========== End ==========")
+
 if __name__ == '__main__':
-    print_factor(52633)
+    find_factor_in_array()
